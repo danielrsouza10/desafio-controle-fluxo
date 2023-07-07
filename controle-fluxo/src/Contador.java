@@ -11,13 +11,11 @@ public class Contador {
         System.out.println("Digite o segundo parametro");
         int segundoContador = contador.nextInt();
 
-        
-
         try{
             validarParametros(primeiroContador, segundoContador);
              
         } catch (ParametrosInvalidosException e){
-            System.out.println("O primeiro parametro deve ser maior do que o segundo");
+            System.out.println("Erro: O primeiro parametro deve ser maior do que o segundo");
         }
 
     }
